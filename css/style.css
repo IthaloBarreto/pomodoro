@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --fonte-principal: 'Montserrat', sans-serif;
+    --cor-principal: rgb(25, 148, 127);
+}
+
+
+
+/* contexto pomodoro */
+
+[data-contexto="pomodoro"] {
+    background-color: var(--cor-principal);
+}
+
+[data-contexto="pomodoro"] .container {
+    border-radius: 12px;
+    margin: 170px auto;
+    background-color: rgb(88, 189, 167);
+    width: 650px;
+    height: 450px;
+}
+
+[data-contexto="pomodoro"] .container__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+[data-contexto="pomodoro"] .container__buttons button {
+    cursor: pointer;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -1px;
+    border: none;
+    background-color: transparent;
+    padding: 0.4em;
+}
+
+[data-contexto="pomodoro"] .container__buttons button.active {
+    background-color: rgb(72, 168, 147);
+    border-radius: 5px;
+}
+
+[data-contexto="pomodoro"] .timer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 160px;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+}
+
+[data-contexto="pomodoro"] .button__start {
+    margin-top: 40px;
+    text-align: center;
+}
+
+[data-contexto="pomodoro"] .start {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 36px;
+    color: rgb(7, 117, 90);
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    box-shadow: 0px 4px 0px 0px rgb(211, 211, 211);
+}
+
+
+
+/* contexto curto */
+
+[data-contexto="curto"] {
+    background-color: #4c7ca5;
+}
+
+[data-contexto="curto"] .container {
+    border-radius: 12px;
+    margin: 170px auto;
+    background-color: #2f5f8a;
+    width: 650px;
+    height: 450px;
+}
+
+[data-contexto="curto"] .container__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+[data-contexto="curto"] .container__buttons button {
+    cursor: pointer;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -1px;
+    border: none;
+    background-color: transparent;
+    padding: 0.4em;
+}
+
+[data-contexto="curto"] .container__buttons button.active {
+    background-color: #4880b1;
+    border-radius: 5px;
+}
+
+[data-contexto="curto"] .timer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 160px;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+}
+
+[data-contexto="curto"] .button__start {
+    margin-top: 40px;
+    text-align: center;
+}
+
+[data-contexto="curto"] .start {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 36px;
+    color: #12395c;
+    font-weight: 700;
+    font-family: var(--fonte-principal);
+    box-shadow: 0px 4px 0px 0px rgb(211, 211, 211);
+}
+
+
+
+
+/* contexto longo */
+
+[data-contexto="longo"] {
+    background-color: #ce6e6e;
+}
+
+[data-contexto="longo"] .container {
+    border-radius: 12px;
+    margin: 170px auto;
+    background-color: #b95757;
+    width: 650px;
+    height: 450px;
+}
+
+[data-contexto="longo"] .container__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+[data-contexto="longo"] .container__buttons button {
+    cursor: pointer;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -1px;
+    border: none;
+    background-color: transparent;
+    padding: 0.4em;
+}
+
+[data-contexto="longo"] .container__buttons button.active {
+    background-color: #9e4b4b;
+    border-radius: 5px;
+}
+
+[data-contexto="longo"] .timer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 160px;
+    color: #fff;
+    font-family: var(--fonte-principal);
+    font-weight: 600;
+}
+
+[data-contexto="longo"] .button__start {
+    margin-top: 40px;
+    text-align: center;
+}
+
+[data-contexto="longo"] .start {
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 36px;
+    color: #b95757;
+    font-weight: 600;
+    font-family: var(--fonte-principal);
+    box-shadow: 0px 4px 0px 0px rgb(211, 211, 211);
+}
+
+[data-contexto="longo"] .checkbox-wrapper-3 input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+}
+
+[data-contexto="longo"] .checkbox-wrapper-3 .toggle {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+
+[data-contexto="longo"] .checkbox-wrapper-3 .toggle:before {
+    content: "";
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 34px;
+    height: 14px;
+    display: block;
+    background: #9A9999;
+    border-radius: 8px;
+    transition: background 0.2s ease;
+}
